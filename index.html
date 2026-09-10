@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTEO AMARILLO - Tu PCGE Interactivo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
+  <!-- BARRA LATERAL (SIDEBAR) -->
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-icon">T</span>
+      <div>
+        <h2>CONTEO <span>AMARILLO</span></h2>
+        <p>Tu PCGE, rápido y fácil</p>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="#" class="active"><i class="fa-solid fa-house"></i> Inicio</a>
+      <a href="#"><i class="fa-solid fa-book-open"></i> Plan Contable</a>
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Buscar</a>
+      <a href="#"><i class="fa-solid fa-heart"></i> Favoritos</a>
+      <a href="#"><i class="fa-solid fa-download"></i> Descargas</a>
+      <a href="#"><i class="fa-solid fa-circle-info"></i> Acerca del PCGE</a>
+    </nav>
+
+    <div class="promo-card">
+      <div class="badge-yellow">CONTEO AMARILLO</div>
+      <p>Aprende y consulta de forma fácil</p>
+      <button class="btn-explore">¡Vamos a explorar! &rarr;</button>
+    </div>
+  </aside>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-content">
+    
+    <!-- BARRA SUPERIOR (HEADER) -->
+    <header class="top-bar">
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Buscar cuenta, código o nombre...">
+      </div>
+      <div class="top-links">
+        <a href="#"><i class="fa-solid fa-heart"></i> Favoritos</a>
+        <a href="#" class="btn-info"><i class="fa-solid fa-circle-info"></i> Sobre el PCGE</a>
+      </div>
+    </header>
+
+    <!-- BANNER HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Plan Contable General Empresarial</h1>
+        <p>Explora el PCGE de manera interactiva y sencilla.</p>
+        <div class="hero-buttons">
+          <button class="btn-black"><i class="fa-solid fa-book"></i> Explorar elementos</button>
+          <button class="btn-outline"><i class="fa-regular fa-file-lines"></i> Ver guía del PCGE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE ELEMENTOS DEL PCGE -->
+    <section class="elements-section">
+      <h2><i class="fa-solid fa-layer-group"></i> Elementos del PCGE</h2>
+      <div class="grid-elements" id="gridElements">
+        <!-- Las tarjetas se generan dinámicamente con JavaScript -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
